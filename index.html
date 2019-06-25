@@ -14,6 +14,7 @@
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/8049d5025a.js"></script>
+
     <!-- MailerLite Universal -->
 <script>
     (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
@@ -21,10 +22,21 @@
     f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
     var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
     _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
-    
+
     var ml_account = ml('accounts', '1546862', 't7a5k6i2b7', 'load');
     </script>
     <!-- End MailerLite Universal -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142588448-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142588448-1');
+    </script>
+
 </head>
 <body>
       <!--============== navbar section ================= -->
@@ -115,19 +127,10 @@
           <hr>
           <div class="partner_grid">
               <div class="icons">
-                <img src="img/diva.jpeg" alt="Div:a" />
+                <a href="http://www.divainitiative.com/" target="_blank"><img src="img/diva_logo.png" alt="Div:a" /></a>
               </div>
-              <!-- <div class="icons shift">
-                <p><b>MatterMost</b></p>
-             </div>
-                <div class="icons shift">
-                    <p>code<b>versity</b></p>
-                </div> -->
           </div>
-          <!-- <p id="partner_link">
-            <a class="partner_link" href="donate.html"> Donate</a>
-            </p> -->
-      </div>
+        </div>
   </section>
 
 
@@ -172,7 +175,11 @@
                     </div>
         </div>
     </div>
-
+    <div class="wrapper">
+        <div class="btn_resource">
+        <p><a href="resources.html" class="resource_btn">See all</a></p>
+    </div>
+    </div>
 <!-- ===== Resource Index Carousel End ===== -->
 
   <section id="newsletter" class="newsletter">
@@ -183,19 +190,19 @@
                     <p>Isabelle Kohncke</p>
                     <p>REDI School, Berlin</p>
                 </div>
-                <div class="conten">
-                    <img class="left" src="img/isabelle.jpeg" alt="Isabelle Kohncke" />
+                <div class="content">
+                    <img class="left" src="img/Isabelle.jpg" alt="Isabelle Kohncke" />
                 </div>
             </div>
         </div>
         <div class="subscribe">
-            <div class="wrapper padding">
-                <div class="grid">
-                    <div class="grid-content">
-                            <h2 id="#singin">Subscribe to our newsletter</h2>
-                    </div>  
-                    <div class="grid-content">
-                            <div class="clear"><a href="javascript:;" class="btn_subscribe" onclick="ml_webform_1367846('show')">Click here to Subscribe!</a></div>
+            <div class="wrapper">
+                <div class="grid_one">
+                    <div class="grid_one_content">
+                        <h2 id="#singin">Subscribe to our newsletter</h2>
+                    </div>
+                    <div class="grid_one_content">
+                            <a href="javascript:;" class="btn_subscribe" onclick="ml_webform_1367846('show')">Subscribe</a>
                     </div>
                 </div>
             </div>
@@ -205,9 +212,9 @@
       <footer>
         <div class="wrapper">
             <ul class="footer_nav">
-                <li>2019 by <a href="#">undecode</a></li>
+                <li>2019 by <a href="#">undercode</a></li>
                 <li><a href="data-policy.html">Data-Policy</a></li>
-                <li>support@undercode.com</li>
+                <li>support@undercode.org</li>
                 <li>Lisbon, Portugal</li>
                 <li>
                     <ul class="social_icons">
@@ -227,7 +234,7 @@
 <!-- ===== nav script ===== -->
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/carousel.js"></script>
-<!-- POP UP MAILERLITE --!>
+<!-- POP UP MAILERLITE -->
 <script>
     var ml_webform_1367846 = ml_account('webforms', '1367846', 'r6y2b6', 'load');
     ml_webform_1367846('animation', 'fadeIn');
