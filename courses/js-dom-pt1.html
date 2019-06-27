@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta http-equiv="pragma" content="no-cache" />
 
 
 	<link href='http://fonts.googleapis.com/css?family=Poppins:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -108,8 +108,9 @@
                     <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
                     <button class="course-download">Download</button> -->
                 </div>
-                <div class="content-video">
-                        <iframe width="800" height="510" src="https://www.youtube.com/embed?v=0ik6X4DJKCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="content-video"></div>
+				<embed id="video" src="" wmode="transparent" type="application/x-shockwave-flash"
+					width="1280" height="720" allowfullscreen="true" title="Video Player"></embed>
 				</div>
 				<h2>Powered by: <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank">Traversy Media</a></h2>
             </div>
@@ -155,8 +156,12 @@
   <script src="js/jquery.mixitup.min.js"></script>
   
   <script src="js/main.js"></script>
-  
-  <script type="text/javascript" src="js/modal.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript">
+    $(window).load(function () {
+        $("#video")[0].src = "https://www.youtube.com/v/0ik6X4DJKCc";
+    });
+</script>
   
   
   <!-- Resource jQuery -->
