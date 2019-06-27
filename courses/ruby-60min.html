@@ -93,7 +93,7 @@
 	  </section> <!-- ===== navbar end ===== -->
 
 	  <div class="page-title">
-			<h1>Resources</h1>
+			<h1>Course</h1>
 			</hr>
 		</div>
 	</div>
@@ -109,9 +109,11 @@
                     <button class="course-download">Download</button> -->
                 </div>
                 <div class="content-video">
-                        <iframe width="800" height="510" src="https://www.youtube.com/embed?v=pPy0GQJLZUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-				<h2>Powered by: <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank">Traversy Media</a></h2>
+
+						<embed id="video" src="" wmode="transparent" type="application/x-shockwave-flash"
+						width="1280" height="720" allowfullscreen="true" title="Video Player"></embed>
+
+						<h2>Powered by: <a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank">Traversy Media</a></h2>
             </div>
         </div>
       </section>
@@ -156,7 +158,13 @@
   
   <script src="js/main.js"></script>
   
-  <script type="text/javascript" src="js/modal.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript">
+	$(window).load(function () {
+		$("#video")[0].src = "https://www.youtube.com/v/pPy0GQJLZUM";
+	});
+  </script>
+  
   
   
   <!-- Resource jQuery -->

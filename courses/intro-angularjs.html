@@ -93,7 +93,7 @@
 	  </section> <!-- ===== navbar end ===== -->
 
 	  <div class="page-title">
-			<h1>Resources</h1>
+			<h1>Course</h1>
 			</hr>
 		</div>
 	</div>
@@ -102,16 +102,21 @@
         <div class="wrapper">
             <div class="flex_container_course">
                 <div class="content-description">
-                    <h1 class="course-title">Introduction to AngularJS/h1>
+                    <h1 class="course-title">Introduction to AngularJS</h1>
                     <p class="course-description">In this AngularJS tutorial, how we can use this approach with our AngularJS apps.</p>
                     <br />
                     <!-- DONWLOAD AVAILABLE ONLY FOR ORGANIZATIONS / SCHOOLS
                     <button class="course-download">Download</button> -->
                 </div>
                 <div class="content-video">
-                        <iframe width="800" height="510" src="https://www.youtube.com/embed?v=FlUCU13dJyo&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+						<embed id="video" src="" wmode="transparent" type="application/x-shockwave-flash"
+						width="1280" height="720" allowfullscreen="true" title="Video Player"></embed>
+
+						<h2>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></h2>
+						
 				</div>
-				<h2>Powered by: <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">The Net Ninja</a></h2>
+	
             </div>
         </div>
       </section>
@@ -156,7 +161,12 @@
   
   <script src="js/main.js"></script>
   
-  <script type="text/javascript" src="js/modal.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript">
+	$(window).load(function () {
+		$("#video")[0].src = "https://www.youtube.com/v/FlUCU13dJyo&list=PL4cUxeGkcC9gsJS5QgFT2IvWIX78dV3_v";
+	});
+  </script>
   
   
   <!-- Resource jQuery -->
