@@ -116,10 +116,7 @@ jQuery(document).ready(function($){
 	});
 });
 
-/*****************************************************
-	MixItUp - Define a single object literal 
-	to contain all filter custom functionality
-*****************************************************/
+
 var buttonFilter = {
   	// Declare any variables we will need as properties of the object
   	$filters: null,
