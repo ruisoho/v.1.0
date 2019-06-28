@@ -167,6 +167,13 @@ body {
     margin-left: 50px;
 }
 
+.video {
+    width: 100%;
+    height: 80%;
+}
+
+
+
 .header_link, .partner_link {
     background-color: #029DE0;
     padding: 10px 15px;
@@ -293,8 +300,13 @@ hr {
     text-align: center;
   }
 
-  .center_one {
+  .center_one, .center_two {
       text-align: center;
+  }
+
+  .center_two {
+      margin-top: 50px;
+      margin-bottom: 50px;
   }
 
 .center {
